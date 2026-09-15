@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Conecta - Guia da Natureza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Atalho para navegação rápida por teclado (Acessibilidade) -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Barra de acessibilidade e controle de foco -->
+    <header class="header-principal">
+        <div class="container header-container">
+            <h1 class="logo">Espaço Conecta</h1>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="btn-nav active">Início</a></li>
+                    <li><a href="#plantas" class="btn-nav">Plantas</a></li>
+                    <li><a href="#cuidados" class="btn-nav">Como Cuidar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="container">
+        
+        <!-- Seção de Apresentação (Objetiva e Direta) -->
+        <section id="inicio" class="card-secao" aria-labelledby="titulo-apresentacao">
+            <h2 id="titulo-apresentacao">Sobre este site</h2>
+            <p>Este site apresenta informações diretas e fáceis sobre plantas de ambiente interno. Aqui você encontrará o nome das plantas, quanta luz elas precisam e a quantidade de água necessária.</p>
+        </section>
+
+        <!-- Seção de Conteúdo: Catálogo de Plantas -->
+        <section id="plantas" class="card-secao" aria-labelledby="titulo-plantas">
+            <h2 id="titulo-plantas">Lista de Plantas Fáceis de Cuidar</h2>
+            <p class="instrucao">Clique em um dos botões abaixo para selecionar uma planta e ler as instruções de cultivo:</p>
+
+            <div class="grid-plantas">
+                <!-- Card 1 -->
+                <article class="card-planta">
+                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=400&q=80" alt="Planta Espada-de-São-Jorge em um vaso bege sobre mesa de madeira.">
+                    <h3>Espada-de-São-Jorge</h3>
+                    <ul class="lista-detalhes">
+                        <li><strong>Luz:</strong> Aceita pouca luz ou luz forte.</li>
+                        <li><strong>Rega:</strong> 1 vez a cada 15 dias.</li>
+                        <li><strong>Ambiente:</strong> Sala de estar ou quarto.</li>
+                    </ul>
+                    <button type="button" class="btn-acao" aria-label="Ler guia completo da Espada-de-São-Jorge">Ver Guia Passo a Passo</button>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-planta">
+                    <img src="https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=400&q=80" alt="Planta Jiboia com folhas verdes penduradas em um vaso branco.">
+                    <h3>Planta Jiboia</h3>
+                    <ul class="lista-detalhes">
+                        <li><strong>Luz:</strong> Luz natural indireta (perto de janelas).</li>
+                        <li><strong>Rega:</strong> 1 a 2 vezes por semana.</li>
+                        <li><strong>Ambiente:</strong> Prateleiras ou locais altos.</li>
+                    </ul>
+                    <button type="button" class="btn-acao" aria-label="Ler guia completo da Planta Jiboia">Ver Guia Passo a Passo</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Ajuda / Contato -->
+        <section id="cuidados" class="card-secao" aria-labelledby="titulo-ajuda">
+            <h2 id="titulo-ajuda">Dúvidas Frequentes</h2>
+            <details class="item-faq">
+                <summary>Como saber se a terra está seca?</summary>
+                <p>Coloque o dedo na terra, até 2 centímetros de profundidade. Se o seu dedo sair limpo e seco, a planta precisa de água.</p>
+            </details>
+            <details class="item-faq">
+                <summary>O que fazer se as folhas amarelarem?</summary>
+                <p>Folhas amarelas geralmente indicam excesso de água. Pare de molhar a planta por 7 dias.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer class="footer-principal">
+        <div class="container">
+            <p>Espaço Conecta - Guia Acessível de Botânica.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
